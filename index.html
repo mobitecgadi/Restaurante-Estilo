@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Código QR</title>
+    <title>Mi Documento PDF</title>
     <style>
         body {
+            font-family: sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            padding: 20px;
         }
-        img {
-            max-width: 90%;
-            max-height: 90vh;
+        iframe {
+            width: 80%; /* Ajusta el ancho según sea necesario */
+            height: 700px; /* Ajusta la altura según sea necesario */
             border: 1px solid #ccc;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        a {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <img src="Cuaderno-3o-Primaria-Vacaciones.pdf" alt="Código QR">
+    <h1>Aquí puedes ver mi documento PDF</h1>
+    <iframe src="Cuaderno-3o-Primaria-Vacaciones.pdf"></iframe>
+    <p>Si el documento no se carga correctamente, puedes descargarlo:</p>
+    <a href="Cuaderno-3o-Primaria-Vacaciones.pdf" download>Descargar PDF</a>
 </body>
 </html>
